@@ -23,7 +23,7 @@ MODELO = r"""<!doctype html>
 :root{--bg:#f4f6f8;--fg:#1c2530;--card:#fff;--bd:#e1e6eb;--ac:#1565c0}
 @media(prefers-color-scheme:dark){:root{--bg:#12161b;--fg:#e8edf2;--card:#1b222a;--bd:#2c3640;--ac:#64b5f6}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,"Segoe UI",sans-serif}
-header{background:linear-gradient(135deg,#0d47a1,#1976d2);color:#fff;padding:22px 5vw}header h1{margin:0;font-size:1.6rem}header small{opacity:.85}
+header{background:linear-gradient(135deg,#0d47a1,#1976d2);color:#fff;padding:22px 5vw;text-align:center}header h1{margin:0;font-size:1.6rem}header small{opacity:.85}
 main{max-width:1400px;margin:auto;padding:16px 5vw}#f{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
 select,button{font:inherit;padding:7px 12px;background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:8px;cursor:pointer}
 nav{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}nav button{border-radius:999px}nav button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
@@ -46,7 +46,7 @@ small,footer{opacity:.75}footer{padding:8px 5vw 24px;font-size:.85rem}#det{margi
 <div id="sem" class="bd"></div><div id="gm"></div><div id="om"></div><div id="leg"></div><div id="det">Clique em um ponto do mapa para ver os detalhes.</div></section>
 <section id="tab" style="display:none"><div class="t" id="tb"></div></section>
 <section id="pend" style="display:none"><small>Itens a corrigir na base (aba PENDENCIAS da planilha).</small><div class="t" id="pd"></div></section>
-</main><footer>Dados atualizados em __GERADO__. Só aparecem no mapa as comunidades com coordenadas.</footer>
+</main><footer>Dados atualizados em __GERADO__. Só aparecem no mapa as comunidades com coordenadas. | <a href="https://sites.google.com/teto.org.br/sitesocial/diagn%C3%B3stico?pli=1&amp;authuser=0" target="_blank" rel="noopener noreferrer">Diagnóstico - TETO PE</a> | <a href="https://www.instagram.com/teto.br.pe/" target="_blank" rel="noopener noreferrer">Instagram @teto.br.pe</a></footer>
 <script>
 const D=__DATA__,P=__PEND__,KEY="__CHAVE__",GM=!!KEY&&location.protocol!=="file:",NI="Não informado",$=i=>document.getElementById(i),
 F=[["mun","Município"],["status","Status padronizado"],["cat","Categoria"],["lid","Liderança"],["mv","Origem MV"],["fund","Situação fundiária"],["risco","Risco ambiental"],["dem","Demanda construtiva"]],
